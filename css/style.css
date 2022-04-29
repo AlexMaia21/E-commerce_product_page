@@ -1,0 +1,990 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  position: relative;
+}
+body.background-show::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+}
+
+.header {
+  height: 100px;
+  padding: 0 20px;
+}
+@media screen and (max-width: 600px) {
+  .header {
+    height: 90px;
+  }
+}
+.header__container {
+  max-width: 1100px;
+  margin: 0 auto;
+  height: 100%;
+  border-bottom: 1px solid #b6bcc8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+@media screen and (max-width: 600px) {
+  .header__container {
+    border: none;
+  }
+}
+.header__box-left {
+  display: flex;
+  align-items: center;
+}
+.header .box-left__icon-hamburguer {
+  display: none;
+  margin-top: 5px;
+  margin-right: 20px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+@media screen and (max-width: 762px) {
+  .header .box-left__icon-hamburguer {
+    display: block;
+  }
+}
+.header .menu-hamburguer {
+  position: fixed;
+  top: 0;
+  left: -20px;
+  width: 260px;
+  height: 100vh;
+  overflow: auto;
+  transform: translate3d(-100%, 0, 0);
+  transition: all 0.3s ease-in-out;
+  background: #fff;
+  z-index: 3;
+}
+@media screen and (max-width: 762px) {
+  .header .menu-hamburguer.active {
+    transform: translate3d(20px, 0, 0);
+    transition: all 0.3s ease-in-out;
+  }
+}
+.header .menu-hamburguer .icon-exit {
+  height: 90px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+}
+.header .menu-hamburguer .btn-hide-menu-hamburguer {
+  font-size: 2.7rem;
+  cursor: pointer;
+}
+.header .menu-hamburguer .menu-nav {
+  padding: 0 20px;
+}
+.header .menu-hamburguer ul li {
+  padding: 30px 0;
+}
+.header .menu-hamburguer ul li a {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+.header .menu-hamburguer.active ul li:nth-child(1) {
+  animation: animDelay 0.7s ease both 0.04s;
+}
+.header .menu-hamburguer.active ul li:nth-child(2) {
+  animation: animDelay 0.7s ease both 0.08s;
+}
+.header .menu-hamburguer.active ul li:nth-child(3) {
+  animation: animDelay 0.7s ease both 0.12s;
+}
+.header .menu-hamburguer.active ul li:nth-child(4) {
+  animation: animDelay 0.7s ease both 0.16s;
+}
+.header .menu-hamburguer.active ul li:nth-child(5) {
+  animation: animDelay 0.7s ease both 0.2s;
+}
+@keyframes animDelay {
+  from {
+    transform: translate3d(-100px, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.header .box-left__logo {
+  margin-right: 40px;
+}
+.header .box-left__logo img {
+  min-width: 120px;
+}
+.header .box-left__menu {
+  display: flex;
+}
+.header .box-left__menu a {
+  padding-bottom: 2.32rem;
+}
+.header .box-left__menu a:hover {
+  border-bottom: 3px solid #ff7d1a;
+}
+.header .box-left__menu li {
+  margin-left: 20px;
+}
+.header .box-left__menu li:first-child {
+  margin-left: 0;
+}
+@media screen and (max-width: 762px) {
+  .header .box-left__menu {
+    display: none;
+  }
+}
+.header .box-right {
+  display: flex;
+  align-items: center;
+}
+.header .box-right__cart-icon {
+  margin-top: 10px;
+  position: relative;
+  cursor: pointer;
+}
+.header .box-right__icon {
+  font-size: 2.1rem;
+  font-weight: bold;
+}
+@media screen and (max-width: 762px) {
+  .header .box-right__icon {
+    font-size: 1.9em;
+  }
+}
+.header .box-right__cart-number {
+  font-size: 0.7rem;
+  color: #fff;
+  background: #ff7d1a;
+  border-radius: 8px;
+  padding: 1px 8px;
+  display: inline-block;
+  position: absolute;
+  top: -4px;
+  right: -6px;
+  z-index: 1;
+}
+.header .box-right__person img {
+  max-width: 3.5rem;
+  margin-left: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.header .box-right__person img:hover {
+  border: 1px solid #ff7d1a;
+}
+@media screen and (max-width: 762px) {
+  .header .box-right__person img {
+    margin-left: 10px;
+    max-width: 2.8em;
+  }
+}
+.header .cart-container {
+  position: absolute;
+  top: 82px;
+  right: -50px;
+  margin-right: 90px;
+  width: 360px;
+  height: 280px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  display: none;
+  z-index: 10;
+}
+@media screen and (max-width: 600px) {
+  .header .cart-container {
+    min-width: 100%;
+    width: 100px;
+    top: 90px;
+    left: 0;
+    right: 0;
+    margin: 0;
+  }
+}
+.header .container {
+  height: 100%;
+}
+.header .cart-container.active {
+  display: block;
+  animation: cartContainerSuave 0.3s ease forwards;
+}
+@keyframes cartContainerSuave {
+  from {
+    transform: translate3d(0, 30px, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+.header .container__cart-text {
+  border-bottom: 1px solid #b6bcc8;
+  height: 75px;
+  padding: 0 20px;
+}
+.header .container__cart-text span {
+  display: inline-block;
+  margin-top: 30px;
+  font-weight: bold;
+}
+.header .cart-finally-product {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 18px;
+}
+.header .cart-finally-product__image-product {
+  width: 60px;
+  margin-right: 10px;
+  border-radius: 8px;
+}
+.header .cart-description {
+  flex-grow: 2;
+  text-align: left;
+}
+.header .cart-finally-product__icon-delete {
+  height: 18px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.header .cart-product__checkout {
+  padding: 0 18px;
+}
+.header .cart-product__checkout a {
+  display: block;
+  border-radius: 8px;
+  margin-top: 10px;
+  padding: 15px 0;
+  text-align: center;
+  background: #ff7d1a;
+}
+.header .container__cart-product-empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100% - 75px);
+}
+
+.main {
+  margin-bottom: 30px;
+}
+.main__container-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 908px) {
+  .main__container-content {
+    max-width: 700px;
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .main__container-content {
+    margin-top: 0;
+  }
+}
+
+.modal {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.modal.active {
+  display: flex;
+}
+@media screen and (max-width: 762px) {
+  .modal.active {
+    display: none;
+  }
+}
+.modal::before {
+  content: "";
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+}
+.modal .modal-container {
+  text-align: center;
+  position: relative;
+}
+.modal .image-content-modal__btn--btn-exit {
+  position: absolute;
+  right: 0px;
+  top: -35px;
+  color: #fff;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+.modal .image-content-modal__btn--btn-exit:hover {
+  color: orange;
+}
+.modal .image-content-modal__buttons--buttons-control {
+  position: absolute;
+  left: 0px;
+  top: 40%;
+  width: 100%;
+}
+.modal .image-content-modal__buttons--buttons-control .image-content-modal__btn-back--to-back,
+.modal .image-content-modal__buttons--buttons-control .image-content-modal__btn-next--to-next {
+  position: absolute;
+  color: #fff;
+  font-size: 2em;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.modal .image-content-modal__buttons--buttons-control .image-content-modal__btn-back--to-back:hover,
+.modal .image-content-modal__buttons--buttons-control .image-content-modal__btn-next--to-next:hover {
+  background: orange;
+}
+.modal .image-content-modal__buttons--buttons-control .image-content-modal__btn-back--to-back {
+  left: -20px;
+}
+.modal .image-content-modal__buttons--buttons-control .image-content-modal__btn-next--to-next {
+  right: -20px;
+}
+.modal .image-content-modal__product-modal {
+  width: 420px;
+  border-radius: 10px;
+}
+.modal .modal-container__thumbs-modal {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.modal .modal-container__thumbs-modal img {
+  max-width: 70px;
+  cursor: pointer;
+}
+.modal .modal-container__thumbs-modal img:hover {
+  filter: contrast(40%);
+}
+
+.main__container-left {
+  flex: 1 1 430px;
+  padding: 0 20px;
+}
+@media screen and (max-width: 600px) {
+  .main__container-left {
+    padding: 0;
+  }
+}
+
+.container-left__image-product {
+  position: relative;
+  max-width: 480px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.container-left__image-product img {
+  border-radius: 10px;
+}
+@media screen and (max-width: 600px) {
+  .container-left__image-product img {
+    border-radius: 0;
+  }
+}
+
+.container-left__thumbs-content {
+  max-width: 480px;
+  margin: 30px auto 0 auto;
+  display: flex;
+}
+@media screen and (max-width: 762px) {
+  .container-left__thumbs-content {
+    display: none;
+  }
+}
+.container-left__thumbs-content img {
+  border-radius: 10px;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+.container-left__thumbs-content img:hover {
+  opacity: 0.6;
+}
+
+.container-left__thumb {
+  margin-left: 20px;
+}
+
+.container-left__thumb:first-child {
+  margin-left: 0;
+}
+
+.container-left__controls-mobile {
+  position: absolute;
+  top: 50%;
+  display: none;
+  justify-content: space-between;
+  width: 100%;
+}
+@media screen and (max-width: 762px) {
+  .container-left__controls-mobile {
+    display: flex;
+  }
+}
+
+.controls-mobile__btn-back--to-back,
+.controls-mobile__btn-next--to-next {
+  color: #fff;
+  font-size: 2.6em;
+  cursor: pointer;
+  border-radius: 50%;
+  margin: 0 17px;
+}
+.controls-mobile__btn-back--to-back:hover,
+.controls-mobile__btn-next--to-next:hover {
+  background: orange;
+}
+
+@keyframes esmaecer {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.container-right {
+  flex: 1 1 300px;
+  align-self: center;
+  padding: 30px 20px;
+}
+.container-right__subtitle {
+  margin-bottom: 20px;
+  color: #ff7d1a;
+}
+.container-right__title {
+  font-size: 2.5em;
+}
+.container-right__description-product {
+  margin: 30px 0 20px 0;
+  line-height: 1.7em;
+  color: #68707d;
+}
+.container-right .values-product__prices-value {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+.container-right .values-product__price {
+  margin-right: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.4em;
+  display: inline-block;
+}
+.container-right .values-product__discount {
+  padding: 3px 8px;
+  background: #ffede0;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #ff7d1a;
+  height: 25px;
+}
+.container-right .values-product__old-price {
+  font-weight: bold;
+  text-decoration: line-through;
+  color: #acb0b9;
+  display: block;
+  flex: 1;
+  text-align: right;
+}
+.container-right .values-product__buttons-purchase {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 908px) {
+  .container-right .values-product__buttons-purchase {
+    justify-content: space-evenly;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container-right .values-product__buttons-purchase {
+    display: block;
+  }
+}
+.container-right .buttons-purchase__quantity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5px;
+  background: #f7f8fd;
+  border-radius: 8px;
+  width: 150px;
+}
+@media screen and (max-width: 768px) {
+  .container-right .buttons-purchase__quantity {
+    width: 100%;
+  }
+}
+.container-right .quantity__remove--reduce,
+.container-right .quantity__add--add-product {
+  cursor: pointer;
+  font-size: 1.4rem;
+  color: #ff7d1a;
+}
+.container-right .quantity__remove--reduce:hover,
+.container-right .quantity__add--add-product:hover {
+  opacity: 0.7;
+}
+.container-right .button-purchase__add-cart--buy {
+  border: none;
+  background: #ff7d1a;
+  padding: 13px 0px;
+  width: 250px;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.4);
+  margin-left: 20px;
+}
+@media screen and (max-width: 600px) {
+  .container-right .button-purchase__add-cart--buy {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 15px;
+  }
+}
+.container-right .button-purchase__add-cart--buy i {
+  margin-right: 10px;
+  color: #fff;
+  font-size: 1.1em;
+}
+.container-right .button-purchase__add-cart--buy span {
+  font-weight: bold;
+  font-size: 0.9em;
+  color: #fff;
+}
+.container-right .button-purchase__add-cart--buy:hover {
+  opacity: 0.7;
+}
+
+.alerta-compra {
+  position: fixed;
+  top: 0;
+  left: 30%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 450px;
+  height: 40px;
+  padding: 30px 0;
+  background: #fff;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.4);
+  display: none;
+  z-index: 100000;
+}
+.alerta-compra.show {
+  display: flex;
+  animation: alerta 0.4s forwards;
+}
+@media screen and (max-width: 762px) {
+  .alerta-compra {
+    width: 94vw;
+    margin: 0 10px;
+    left: 0;
+  }
+}
+
+@keyframes alerta {
+  0% {
+    transform: translate3d(0px, -80px, 0);
+  }
+  75% {
+    transform: translate3d(0px, 65px, 0);
+  }
+  100% {
+    transform: translate3d(0px, 55px, 0);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

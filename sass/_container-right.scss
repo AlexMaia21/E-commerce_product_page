@@ -1,0 +1,96 @@
+.container-right {
+    flex: 1 1 300px;
+    align-self: center;
+    padding: 30px 20px;
+    &__subtitle {
+        margin-bottom: 20px;
+        color: hsl(26, 100%, 55%);
+    }
+    &__title {
+        font-size: 2.5em;
+    }
+    &__description-product {
+        margin: 30px 0 20px 0;
+        line-height: 1.7em;
+        color: hsl(219, 9%, 45%);
+    }
+    .values-product__prices-value {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+    }
+    .values-product__price {
+        margin-right: 10px;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.4em;
+        display: inline-block;
+    }
+    .values-product__discount {
+        padding: 3px 8px;
+        background: hsl(25, 100%, 94%);
+        border-radius: 5px;
+        font-weight: bold;
+        color:hsl(26, 100%, 55%);
+        height: 25px;
+    }
+    .values-product__old-price {
+        font-weight: bold;
+        text-decoration: line-through;
+        color: hsl(219, 9%, 70%);
+        display: block;
+        flex: 1;
+        text-align: right;
+    }
+    .values-product__buttons-purchase {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media screen and (max-width: 908px){justify-content: space-evenly;}
+        @media screen and (max-width: 600px){display: block;}
+    }
+    .buttons-purchase__quantity {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 5px;
+        background: hsl(223, 64%, 98%);
+        border-radius: 8px;
+        width: 150px;
+        @media screen and (max-width: 768px) {width: 100%;}
+    }
+    .quantity__remove--reduce,
+    .quantity__add--add-product {
+        cursor: pointer;
+        font-size: 1.4rem;
+        color: hsl(26, 100%, 55%);
+        &:hover {opacity: 0.7;}
+    }
+    .button-purchase__add-cart--buy {
+        border: none;
+        background: hsl(26, 100%, 55%);
+        padding: 13px 0px;
+        width: 250px;
+        border-radius: 8px;
+        cursor: pointer;
+        outline: none;
+        box-shadow: 0px 1px 15px rgba(0,0,0, 0.4);
+        margin-left: 20px;
+        @media screen and (max-width: 600px){
+            width: 100%;
+            margin-left: 0;
+            margin-top: 15px;
+        }
+        i {
+            margin-right: 10px;
+            color: #fff;
+            font-size: 1.1em;
+        }
+        span {
+            font-weight: bold;
+            font-size: 0.9em;
+            color: #fff;
+        }
+        &:hover {opacity: 0.7;}
+    }
+}

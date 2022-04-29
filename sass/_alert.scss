@@ -1,0 +1,38 @@
+.alerta-compra {
+    position: fixed;
+    top: 0;
+    left: 30%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 450px;
+    height: 40px;
+    padding: 30px 0;
+    background: #fff;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.4);
+    display: none;
+    z-index: 100000;
+    &.show {
+        display: flex;
+        animation: alerta 0.4s forwards;
+    }
+    @media screen and (max-width: 762px){
+        width: 94vw;
+        margin: 0 10px;
+        left: 0;
+    }
+}
+
+@keyframes alerta {
+    0% {
+        transform: translate3d(0px, -80px, 0);
+    }
+    75% {
+        transform: translate3d(0px, 65px, 0);
+    }
+    100% {
+        transform: translate3d(0px, 55px, 0);
+    } 
+}

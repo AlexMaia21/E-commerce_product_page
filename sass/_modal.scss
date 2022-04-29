@@ -1,0 +1,73 @@
+// block in container-left
+
+.modal {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    &.active {
+        display: flex;
+        @media screen and (max-width: 762px){display: none;}
+    }
+    &::before {
+        content: '';
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.8);
+    }
+    .modal-container {
+        text-align: center;
+        position: relative;
+    }
+    .image-content-modal__btn--btn-exit {
+        position: absolute;
+        right: 0px;
+        top: -35px;
+        color: #fff;
+        font-size: 1.5em;
+        cursor: pointer;
+        &:hover {color: orange;}
+    }
+    .image-content-modal__buttons--buttons-control {
+        position: absolute;
+        left: 0px;
+        top: 40%;
+        width: 100%;
+        .image-content-modal__btn-back--to-back,
+        .image-content-modal__btn-next--to-next {
+            position: absolute;
+            color: #fff;
+            font-size: 2em;
+            cursor: pointer;
+            border-radius: 50%;
+            &:hover {background: orange;}
+        }
+        .image-content-modal__btn-back--to-back {left: -20px;}
+        .image-content-modal__btn-next--to-next {right: -20px;}
+    }
+    .image-content-modal__product-modal {
+        width: 420px;
+        border-radius: 10px;
+    }
+    .modal-container__thumbs-modal {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        img {
+            max-width: 70px;
+            cursor: pointer;
+            &:hover {filter: contrast(40%);}
+        }
+    }
+}

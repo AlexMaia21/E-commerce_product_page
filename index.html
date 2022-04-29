@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/d462baad6c.js" crossorigin="anonymous"></script>
+    <title>E-commerce product page</title>
+</head>
+
+<body>
+    <header class="header">
+        <!-- MENU HAMBURGUER -->
+        <div class="menu-hamburguer">
+            <div class="icon-exit">
+                <ion-icon name="close-outline" class="btn-hide-menu-hamburguer"></ion-icon>
+            </div>
+            <nav class="menu-nav">
+                <ul>
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- ################# -->
+        <div class="header__container">
+            <div class="header__box-left">
+                <div class="box-left__icon-hamburguer">
+                    <i class="fas fa-bars box-left__menu-hamburguer--expand-menu"></i>
+                </div>
+                <div class="box-left__logo">
+                    <a href="#">
+                        <img src="images/logo.svg" alt="logo">
+                    </a>
+                </div>
+                <ul class="box-left__menu">
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="box-right">
+                <div class="box-right__cart">
+                    <div class="box-right__cart-icon">
+                        <span class="box-right__cart-number">0</span>
+                        <ion-icon name="cart-outline" class="box-right__icon"></ion-icon>
+                    </div>
+
+                    <!-- CART CONTAINER -->
+                    <div class="cart-container">
+                        <div class="container">
+                            <div class="container__cart-text">
+                                <span>Cart</span>
+                            </div>
+                            <!-- CASO TENHA ALGUM PRODUTO -->
+                            <div class="cart-product">
+                                <div class="cart-finally-product">
+                                    <img src="images/image-product-1-thumbnail.jpg" alt="tenis"
+                                        class="cart-finally-product__image-product">
+                                    <div class="cart-description">
+                                        <p class="cart-description__title" style="line-height: 30px;">Fall Limited
+                                            Edition Sneakers</p>
+                                        <span class="cart-description__value">$125 x</span>
+                                        <span class="cart-description__amount"></span>
+                                        <span class="cart-description__total" style="font-weight: bold;">$<span>1332</span></span>
+                                    </div>
+                                    <img src="images/icon-delete.svg" class="cart-finally-product__icon-delete">
+                                </div>
+                                <div class="cart-product__checkout">
+                                    <a href="#" style="color: #fff">Checkout</a>
+                                </div>
+                            </div>
+                            <!-- CASO NÃO TENHA NENHUM PRODUTO -->
+                            <div class="container__cart-product-empty" style="display: none;">
+                                <strong>Your Cart is Empty</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-right__person">
+                    <img src="images/image-avatar.png" alt="image-avatar">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="main__container-content">
+            <section class="main__container-left">
+                <!-- Modal -->
+                <div class="modal">
+                    <div class="modal-container">
+                        <div class="modal-container__image-content-modal">
+                            <i class="fas fa-times image-content-modal__btn--btn-exit"></i>
+                            <div class="image-content-modal__buttons--buttons-control">
+                                <i class="fas fa-chevron-circle-left image-content-modal__btn-back--to-back" data-direction="back"></i>
+                                <i class="fas fa-chevron-circle-right image-content-modal__btn-next--to-next" data-direction="next"></i>
+                            </div>
+                            <img src="./images/image-product-1.jpg" class="image-content-modal__product-modal" alt="product-modal">
+                        </div>
+                        <div class="modal-container__thumbs-modal">
+                            <img src="images/image-product-1-thumbnail.jpg" alt="img-tenis-1-thumb">
+                            <img src="images/image-product-2-thumbnail.jpg" alt="img-tenis-2-thumb">
+                            <img src="images/image-product-3-thumbnail.jpg" alt="img-tenis-3-thumb">
+                            <img src="images/image-product-4-thumbnail.jpg" alt="img-tenis-4-thumb">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-left__image-product">
+                    <img src="images/image-product-1.jpg" alt="img-tenis">
+                    <div class="container-left__controls-mobile">
+                        <i class="fas fa-chevron-circle-left controls-mobile__btn-back--to-back" data-direction="back"></i>
+                        <i class="fas fa-chevron-circle-right controls-mobile__btn-next--to-next" data-direction="next"></i>
+                    </div>
+                </div>
+                <div class="container-left__thumbs-content">
+                    <div class="container-left__thumb">
+                        <img src="images/image-product-1-thumbnail.jpg" alt="img-tenis-1-thumb">
+                    </div>
+                    <div class="container-left__thumb">
+                        <img src="images/image-product-2-thumbnail.jpg" alt="img-tenis-2-thumb">
+                    </div>
+                    <div class="container-left__thumb">
+                        <img src="images/image-product-3-thumbnail.jpg" alt="img-tenis-3-thumb">
+                    </div>
+                    <div class="container-left__thumb">
+                        <img src="images/image-product-4-thumbnail.jpg" alt="img-tenis-4-thumb">
+                    </div>
+                </div>
+            </section>
+            <section class="container-right">
+                <h4 class="container-right__subtitle">SNEAKER COMPANY</h4>
+                <h1 class="container-right__title">Fall Limited Edition Sneakers</h1>
+                <p class="container-right__description-product">
+                    These low-profile sneakers are your perfect casual wear companion. Featuring a
+                    durable rubber outer sole, they’ll withstand everything the weather can offer.
+                </p>
+                <div class="container-right__values-product">
+                    <div class="values-product__prices-value">
+                        <span class="values-product__price">$125.00</span>
+                        <span class="values-product__discount">50%</span>
+                        <span class="values-product__old-price">$250.00</span>
+                    </div>
+                    <div class="values-product__buttons-purchase">
+                        <div class="buttons-purchase__quantity">
+                            <ion-icon name="remove-outline" class="quantity__remove quantity__remove--reduce">
+                            </ion-icon>
+
+                            <span class="quantity__number" style="font-weight: bold;">0</span>
+
+                            <ion-icon name="add-outline" class="quantity__add quantity__add--add-product"></ion-icon>
+                        </div>
+                        <button class="button-purchase__add-cart button-purchase__add-cart--buy">
+                            <span>
+                                <i class="fas fa-shopping-cart"></i>
+                                Add to Cart
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- ALERTA DE COMPRA -->
+    <div class="alerta-compra">
+        <span class="alert-compra__text">Compra foi adicionada ao carrinho</span>
+    </div>
+
+    <script src="./js/script.js" type="module"></script>
+    <script src="./js/slide_modal.js" type="module"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
