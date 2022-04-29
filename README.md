@@ -17,7 +17,8 @@ This is a solution to the [E-commerce product page challenge on Frontend Mentor]
 - Flexbox
 - [SASS](https://sass-lang.com/) - SASS Pré processor
 
+- Website: [https://ecommerce-basic-page.netlify.app/](https://ecommerce-basic-page.netlify.app/)
+
 ## Author
 
 Developed by Alex Maia 🚀
-Website: [](https://ecommerce-basic-page.netlify.app/)
